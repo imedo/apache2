@@ -104,7 +104,7 @@ end
 
 # General settings
 default['apache']['listen_ports'] = ["80"]
-default['apache']['contact'] = "ops@example.com"
+default['apache']['contact'] = "admins@imedo.de"
 default['apache']['timeout'] = 300
 default['apache']['keepalive'] = "On"
 default['apache']['keepaliverequests'] = 100
@@ -135,7 +135,7 @@ default['apache']['prefork']['maxrequestsperchild'] = 10000
 # Worker Attributes
 default['apache']['worker']['startservers'] = 4
 default['apache']['worker']['serverlimit'] = 16
-default['apache']['worker']['maxclients'] = 1024
+default['apache']['worker']['maxclients'] = 2048
 default['apache']['worker']['minsparethreads'] = 64
 default['apache']['worker']['maxsparethreads'] = 192
 default['apache']['worker']['threadsperchild'] = 64
